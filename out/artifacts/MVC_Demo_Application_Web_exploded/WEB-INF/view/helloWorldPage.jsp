@@ -11,7 +11,7 @@
     <title>HelloWorld input form!</title>
 </head>
 <body>
-<form action="helloPageFormProcessingV2" method="get">
+<form action="helloPageFormProcessingV3" method="get">
     <input type="text" name="studentName"
            placeholder="What's your name?"/>
     <input type="submit"/>
