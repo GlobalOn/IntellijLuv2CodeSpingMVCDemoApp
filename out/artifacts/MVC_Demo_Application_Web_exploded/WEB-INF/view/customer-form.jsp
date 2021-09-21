@@ -15,6 +15,10 @@
         .error{color: red}
     </style>
 
+    <style>
+        .yearsError{color: #0eff0b}
+    </style>
+
 </head>
 
 <body>
@@ -25,6 +29,16 @@
 
     Last name: <form:input path="lastName"/>
     <form:errors path="lastName" cssClass="error"/>
+    <br><br>
+
+    Years being customer of this shop:
+    <form:input path="yearsInThisShop"/>
+    <form:errors path="yearsInThisShop" cssClass="yearsError"/>
+    <br><br>
+
+    Post code:
+    <form:input path="postCode"/>
+    <form:errors path="postCode" cssClass="error"/>
     <br><br>
 
     <input type="submit" value="Submit"/>
