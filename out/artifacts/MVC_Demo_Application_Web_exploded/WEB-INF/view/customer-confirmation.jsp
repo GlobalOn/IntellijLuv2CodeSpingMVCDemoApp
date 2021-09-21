@@ -14,5 +14,9 @@
 </head>
 <body>
 The customer is confirmed: ${customer.firstName} ${customer.lastName}!
+<br>
+${customer.firstName} already customer of this shop ${customer.yearsInThisShop} years!
+<br><br>
+The post code of the customer: ${customer.postCode}
 </body>
 </html>
