@@ -18,5 +18,8 @@ The customer is confirmed: ${customer.firstName} ${customer.lastName}!
 ${customer.firstName} already customer of this shop ${customer.yearsInThisShop} years!
 <br><br>
 The post code of the customer: ${customer.postCode}
+
+<br><br>
+The COURSE CODE of the customer: ${customer.courseCode}
 </body>
 </html>
