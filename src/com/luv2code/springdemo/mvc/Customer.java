@@ -1,5 +1,7 @@
 package com.luv2code.springdemo.mvc;
 
+import com.luv2code.springdemo.mvc.validation.CourseCode;
+
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
@@ -21,6 +23,9 @@ public class Customer {
 
     @Pattern(regexp = "^[a-zA-Z0-9]{6}", message = "Only 6 characters/digits")
     private String postCode;
+
+    @CourseCode(value = "BLABLA", message = "The secret code should starts with BLABLA")
+    private String courseCode;
 
 
     public Customer() {
@@ -56,5 +61,13 @@ public class Customer {
 
     public void setPostCode(String postCode) {
         this.postCode = postCode;
+    }
+
+    public String getCourseCode() {
+        return courseCode;
+    }
+
+    public void setCourseCode(String courseCode) {
+        this.courseCode = courseCode;
     }
 }
